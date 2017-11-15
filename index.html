@@ -6,6 +6,11 @@
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
         <link href="styles.css" rel="stylesheet">
         <script src="https://use.fontawesome.com/d7bbbc002a.js"></script>
+        <script>
+                function myFunction(x) {
+                    x.classList.toggle("change");
+                }
+                </script>
         <!-- <link rel="stylesheet" href="/Users/rewack/Documents/BlogSite/resources/font-awesome-copy/css/font-awesome.min.css"> -->
         <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -13,6 +18,7 @@
     </head>
     <body>
         <header>
+            <div class="pcMenuItems">
             <nav>
                 <ul>
                     <img class="logoImg" src="resources/MichaelFrankCircle.png">
@@ -22,6 +28,49 @@
                     <li><i class="fa fa-calendar-o"><a href="tomorrow.html"> Tomorrow</a></i></li>
                 </ul>
             </nav>
+            </div>
+            
+            <!-- <nav>
+                <input type="checkbox" id="NavButtonTest">
+                <label for="NavButtonTest">&#8801;</label>
+                <ul>
+                    <li><i class="fa fa-home"><a href="index.html"> Home</a></i></li>
+                    <li><i class="fa fa-gamepad"><a href="gaming.html"> Gaming</a></i></li>
+                    <li><i class="fa fa-cogs"><a href="gear.html"> Gear</a></i></li>
+                    <li><i class="fa fa-calendar-o"><a href="tomorrow.html"> Tomorrow</a></i></li>
+                </ul>
+            </nav> -->
+            <img class="logoImg" src="resources/MichaelFrankCircle.png">
+            <div class="dropdown">
+            <div class="container" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                  </div>
+                  <div class="dropdown">
+                        <div class="dropdown-content">
+                          <p><i class="fa fa-home"><a href="index.html"> Home</a></i></p>
+                          <p><i class="fa fa-gamepad"><a href="gaming.html"> Gaming</a></i></p>
+                          <p><i class="fa fa-cogs"><a href="gear.html"> Gear</a></i></p>
+                          <p><i class="fa fa-calendar-o"><a href="tomorrow.html"> Tomorrow</a></i></p>
+                        </div>
+                      </div>
+            </div>
+            <!-- <div class="phoneMenuItems">
+            <nav>
+                <ul><img class="logoImg" src="resources/MichaelFrankCircle.png">
+                <div class="dropdown">
+                    <i>&#8801;</i>
+                    <div class="dropdown-content">
+                      <p><i class="fa fa-home"><a href="index.html"> Home</a></i></p>
+                      <p><i class="fa fa-gamepad"><a href="gaming.html"> Gaming</a></i></p>
+                      <p><i class="fa fa-cogs"><a href="gear.html"> Gear</a></i></p>
+                      <p><i class="fa fa-calendar-o"><a href="tomorrow.html"> Tomorrow</a></i></p>
+                    </div>
+                  </div>
+                </ul>
+            </nav>
+            </div> -->
         </header>
         <main>
             <section class="tempHomeSection">
@@ -39,5 +88,6 @@
                 </article>
             </section>
         </main>
+        <script src="blog.js"></script>
     </body>
 </html>
