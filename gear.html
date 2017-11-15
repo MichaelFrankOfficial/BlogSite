@@ -13,6 +13,8 @@
     </head>
     <body>
         <header>
+            <!--Navigation If on PC-->
+            <div class="pcMenuItems">
             <nav>
                 <ul>
                     <img class="logoImg" src="resources/MichaelFrankCircle.png">
@@ -22,6 +24,26 @@
                     <li><i class="fa fa-calendar-o"><a href="tomorrow.html"> Tomorrow</a></i></li>
                 </ul>
             </nav>
+            </div>
+            <!--Navigation If on Phone-->
+            <div class="phoneMenuItems">
+            <img class="logoImg" src="resources/MichaelFrankCircle.png">
+            <div class="dropdown">
+            <div class="container" id="hamburgerMenu">
+                    <div class="bar1" id="line1"></div>
+                    <div class="bar2" id="line2"></div>
+                    <div class="bar3" id="line3"></div>
+                  </div>
+                  <div class="dropdown" id="dropdownMenu">
+                        <div class="dropdown-content" id="dropContent">
+                          <p><i class="fa fa-home"><a href="index.html"> Home</a></i></p>
+                          <p><i class="fa fa-gamepad"><a href="gaming.html"> Gaming</a></i></p>
+                          <p><i class="fa fa-cogs"><a href="gear.html"> Gear</a></i></p>
+                          <p><i class="fa fa-calendar-o"><a href="tomorrow.html"> Tomorrow</a></i></p>
+                        </div>
+                      </div>
+            </div>
+            </div>
         </header>
         <main>
             <h1>The Latest in Tech Gear</h1>
@@ -48,5 +70,6 @@
                 </article>
             </section>
         </main>
+        <script src="blog.js"></script>
     </body>
 </html>
