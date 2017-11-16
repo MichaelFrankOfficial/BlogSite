@@ -9,8 +9,12 @@ body{
     width: 100%;
     margin:0;
     padding: 0;
+    background-color: #222;
 }
 header{
+    border-bottom: solid;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+    border-color: rgb(45, 81, 163);
     position: static;
     width: 100%;
     height: 20%;
@@ -19,6 +23,12 @@ header{
     margin: 0;
     right: 0;
     }
+footer{
+    text-align: center;
+    font-size: 100%;
+    color: rgb(192, 192, 192);
+    
+}
 .logoImg{
     height: 4em;
     float: left;
@@ -27,6 +37,7 @@ header{
     margin-right:50%;
     padding-left: auto;
     padding-right: auto;
+    padding-bottom: .3em;
 }
 /*Collapse Hamburger*/
 .container {
@@ -38,7 +49,7 @@ header{
 .bar1, .bar2, .bar3 {
     width: 35px;
     height: 5px;
-    background-color: #333;
+    background-color: rgb(192, 192, 192);
     margin: 6px 0;
     transition: 0.4s;
 }
@@ -64,15 +75,26 @@ header{
 .dropdown {
     position: relative;
     display: inline-block;
+    width: 100%;
+}
+.dropdownCover{
+    background-color: transparent;
+    height: 100%;
+    width: 100%;
+    display: none;
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    width: 14em;
-    background-color: #f9f9f9;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    padding: 12px 16px;
+    width: 100%;
+    background-color: rgb(46, 46, 46);
+    border-bottom: solid;
+    border-color: rgb(45, 81, 163);
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.6);
+    padding-top: 4%;
+    padding-bottom: 4%;
+    padding-right: 0%;
     z-index: 1;
 }
 .dropdown-content i {
@@ -81,7 +103,7 @@ header{
 }
 .dropdown-content p a {
     text-decoration: none;
-    color: rgb(104,104, 104);
+    color: rgb(139, 139, 139);
 }
 .dropdown-content p a:hover {
     text-decoration: none;
@@ -125,29 +147,32 @@ nav ul li a:last-child{
 nav ul li a:hover{
     color: rgb(75, 75, 75);
 }
+.divHomePC .pSubtitle{
+    margin-left: 1em;
+}
 /*--------------------------------*/
 h1{
     font-family: 'Oswald', sans-serif;
-    font-size: 100%;
+    font-size: 2.2em;
+    color: rgb(192, 192, 192);
 }
 h2{
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 100%;
+    font-size: 1.4em;
+    color: rgb(192, 192, 192);
+}
+p{
+    color: rgb(192, 192, 192);
 }
 li{
     color: rgb(0, 162, 255);
-}
-section{
-    border-top: solid;
-    border-top-color: rgb(143, 143, 143);
-    border-top-width: 4%;
 }
 .sectionImgGaming{
     display: flex;
     border:solid;
     border-color: rgb(143, 143, 143);
-    border-width: 2%;;
-    margin-left: 7%;
+    border-width: 2%;
+    margin-left: 12%;
     margin-right: auto;
     padding-left: auto;
     padding-right: auto;
@@ -157,7 +182,7 @@ section{
     border:solid;
     border-color: rgb(143, 143, 143);
     border-width: 2%;;
-    margin-left: 7%;
+    margin-left: 12%;
     margin-right: auto;
     padding-left: auto;
     padding-right: auto;
@@ -167,7 +192,7 @@ section{
     border:solid;
     border-color: rgb(143, 143, 143);
     border-width: 2%;;
-    margin-left: 7%;
+    margin-left: 12%;
     margin-right: auto;
     padding-left: auto;
     padding-right: auto;
@@ -184,30 +209,47 @@ section{
     border-bottom-width: 2%;
 }
 .tempHomeList{
+    display: block;
     width: 100%;
-    height: 3em;
-    border-top: solid;
-    border-top-color: rgb(143, 143, 143);
-    border-top-width: 2%;
+    height: auto;
     border-bottom: solid;
     border-bottom-color: rgb(143, 143, 143);
     border-bottom-width: 2%;
-    font-size: 2rem;
+    font-size: .4em;
     font-family: 'Oswald', sans-serif;
     margin-top: auto;
     margin-bottom: auto;
     text-align: left;
+    color: rgb(192, 192, 192);
+}
+.tempHomeList h1{
+    display: flex;
+    flex-direction: column;
 }
 .tempHomeSection{
     margin-top:2%;
     display: flex;
     flex-direction: column;
 }
+.homePhoneIMG{
+    margin-left: 1em;
+    padding-top:1em;
+    height: 3rem;
+    width: 4rem;
+    float: left;
+    text-align: left;
+    margin-right:2%;
+}
+.pSubtitle{
+    font-size: .9rem;
+    margin: 0;
+}
 h1 a{
     font-family: 'Oswald', sans-serif;
-    font-size: 100%;
+    font-size: 2em;
     text-decoration: none;
-    color: black;
+    color: rgb(192, 192, 192);
+    margin-left: 2%;
 }
 h1 a:hover{
     color: blue;
@@ -232,6 +274,13 @@ h1 a:hover{
     }
 }
 @media (min-width: 1200px){
+    h1{
+        font-size: 2em;
+    }
+    h2{
+        font-size: 1.4em;
+        color: rgb(192, 192, 192);
+    }
     .pcMenuItems{
         display: block;
     }
@@ -258,9 +307,7 @@ h1 a:hover{
     }
     .sectionImgGaming{
         display: flex;
-        border:solid;
-        border-color: rgb(143, 143, 143);
-        border-width: 2%;;
+        color: rgb(192, 192, 192);
         margin-left: 12%;
         margin-right: auto;
         padding-left: auto;
@@ -269,9 +316,7 @@ h1 a:hover{
     }
     .sectionImgGear{
         display: flex;
-        border:solid;
-        border-color: rgb(143, 143, 143);
-        border-width: 2%;;
+        color: rgb(192, 192, 192);
         margin-left: 12%;
         margin-right: auto;
         padding-left: auto;
@@ -280,41 +325,66 @@ h1 a:hover{
     }
     .sectionImgTomorrow{
         display: flex;
-        border:solid;
-        border-color: rgb(143, 143, 143);
-        border-width: 2%;;
+        color: rgb(192, 192, 192);
         margin-left: 12%;
         margin-right: auto;
         padding-left: auto;
         padding-right: auto;
         content: url("resources/EHang.jpg");
     }
+    .divHomePC{
+        display: block;
+        height: auto;
+        width: auto;
+        text-align: center;
+    }
     .tempHomeList{
+        display: block;
         width: 100%;
-        height: 5em;
-        border-top: solid;
-        border-top-color: rgb(143, 143, 143);
-        border-top-width: 2%;
-        border-bottom: solid;
-        border-bottom-color: rgb(143, 143, 143);
-        border-bottom-width: 2%;
+        height: auto;
         font-size: 2rem;
         font-family: 'Oswald', sans-serif;
         margin-top: auto;
         margin-bottom: auto;
         text-align: left;
-        padding-top: 1em;
+    }
+    .tempHomeList h1{
+        display: flex;
+        flex-direction: row;
+        margin-left: 2em;
+    }
+    .tempHomeList h1 a{
+        font-size: 2rem;
+        margin-left: 2rem;
+        margin-bottom: auto;
     }
     .tempHomeSection{
         margin-top:2%;
         display: flex;
         flex-direction: column;
     }
+    .homePhoneIMG{
+        margin-left: 1em;
+        padding-top:1em;
+        height: 6rem;
+        width: 7rem;
+        float: left;
+        text-align: left;
+        margin-right:2%;
+    }
+    .imgSubtitle{
+        float: right;
+        display: block;
+    }
+    .pSubtitle{
+        font-size: .9rem;
+        margin-left: 3rem;
+    }
     h1 a{
         font-family: 'Oswald', sans-serif;
         font-size: 100%;
         text-decoration: none;
-        color: black;
+        color: rgb(192, 192, 192);
     }
     h1 a:hover{
         color: blue;
